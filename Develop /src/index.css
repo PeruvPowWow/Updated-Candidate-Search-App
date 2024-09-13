@@ -41,6 +41,18 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  text-align: center; /* Center the title */
+  color: #fff;
+  margin-top: 20px;
+}
+
+main {
+  color: #fff;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 button {
@@ -75,13 +87,58 @@ button:focus-visible {
   }
 }
 
-main {
-  color: #fff;
+/* Card Design */
+.card {
+  background-color: #fff;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card img {
   width: 100%;
-  min-height: 100vh;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-content {
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Buttons for save/reject */
+.action-buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.action-buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.5em;
+}
+
+button.reject {
+  background-color: red;
+  color: white;
+}
+
+button.save {
+  background-color: green;
+  color: white;
+}
+
+/* Table Styling */
+.table {
+  width: 80vw;
+  table-layout: fixed;
 }
 
 tr {
@@ -94,6 +151,26 @@ tbody tr:nth-child(odd) {
   background-color: #333333;
 }
 
+td, th {
+  padding: 10px;
+  text-align: center;
+}
+
+.reject-button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.reject-button:hover {
+  opacity: 0.8;
+}
+
+/* Navigation bar */
 .nav {
   display: flex;
   justify-content: flex-start;
@@ -108,13 +185,5 @@ tbody tr:nth-child(odd) {
 .nav-link {
   color: #fff;
   text-decoration: none;
-}
-
-.active {
-  font-weight: 700;
-}
-
-.table {
-  width: 80vw;
-  table-layout: fixed;
+  font-size: 1.2em;
 }
