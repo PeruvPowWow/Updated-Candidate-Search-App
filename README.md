@@ -91,3 +91,12 @@ The application has been tested locally to ensure the following functionalities 
 
 The Candidate Search Application successfully provides a functional interface for searching and saving GitHub users. With a clean and responsive design, it offers users a convenient way to manage their candidate searches. Future updates will focus on expanding features and improving user experience.
 
+## Deployment Link
+
+https://github.com/PeruvPowWow/Updated-Candidate-Search-App
+
+## Repository Link
+
+https://github.com/PeruvPowWow/Updated-Candidate-Search-App
+
+
